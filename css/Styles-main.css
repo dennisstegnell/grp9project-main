@@ -51,7 +51,7 @@
 }
 
 header {
-    background-image: url("./images/header.png");
+    background-image: url("../images/header.png");
     height: var(--header-height);
     background-color: black;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ header {
 
 footer {
     background-color: black;
-    background-image: url("./images/feet.jpg");
+    background-image: url("../images/feet.jpg");
     background-size: contain;
     background-position: center;
     height: var(--footer-height);
@@ -72,7 +72,7 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-image: url("images/organic-bg.jpg");
+    background-image: url("../images/organic-bg.jpg");
 }
 
 article {
