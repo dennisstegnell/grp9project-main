@@ -1,0 +1,50 @@
+:root{
+    --skill-label-size: 95px; /* Anpassa denna efter den längsta texten. */
+    --skill-bar-thickness: 30px;
+    --skill-bar-color: rgba(32, 211, 127, 0.719);
+}
+
+@media screen and (min-width:768px) {
+    article {
+        width: calc(100% - 251px); /* 251 är bildens bredd */
+        max-width: 900px;
+    }
+}
+
+
+
+.skill-container {
+    /* width: 80%; */
+    border: 10px inset rgb(12, 88, 35);
+    margin-bottom: 30px;
+    background-color: rgba(12, 83, 39, 0.3);
+    border-radius: 30px;
+}
+
+.skill-container .skill-bar {
+    border: 2px solid #333;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in;
+}
+
+#bar1 {
+    --target-width: 90%;
+    animation-delay: .5s;
+}
+#bar2 {
+    --target-width: 10%;
+    animation-delay: 1s;
+}
+#bar3 {
+    --target-width: 100%;
+    animation-delay: 1.5s;
+}
+#bar4 {
+    --target-width: 30%;
+    animation-delay: 2s;
+}
+#bar5 {
+    --target-width: 20%;
+    animation-delay: 2.5s;
+}

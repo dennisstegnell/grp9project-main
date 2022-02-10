@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles-main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/dropdown-menu.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    
+    <header></header>
+
+    <div class="flex-container-outer">
+
+        <nav>
+            <p>Menu</p>
+            <label for="menu-toggle">&#9776;</label>
+            <input type="checkbox" id="menu-toggle"/>
+            
+            <div class="menu">
+                <a href="./index.html">Home</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./artists.html">Artists</a>
+                <a href="./contact.html"><span>Contact</span></a>
+            </div>
+        </nav>
+    
+        <section class="main-content">
+            
+            <h1>Contact us</h1>
+
+            <form action="imaginary-server.php" id="contact-form">
+                <input type="text" class="form-text" id="form-name" name="name" minlength="2" placeholder="Name" required><br>
+                <input type="text" class="form-text" id="form-phone" name="phone" placeholder="Phone number (optional)"><br>
+                <input type="email" class="form-text" id="form-email" name="email" placeholder="E-mail" pattern=".+@.+\..+" required><br> <!-- pattern: x@y.z -->
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="form-checkbox" name="anti-spam" required>
+                    <label for="form-checkbox" id="fake-checkbox"></label>
+                    <label for="form-checkbox">Jag tycker att ni är duktiga.</label>
+                </div><br>
+
+                <textarea id="form-message" name="message" cols="50" rows="10" minlength="10" placeholder="Message" required></textarea><br>
+
+                <input type="submit" id="form-submit" value="Send">
+            </form>
+
+        </section>
+        
+    </div>
+
+    <footer></footer>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+:root{
+    --skill-label-size: 155px; /* Anpassa denna efter den längsta texten. */
+    --skill-bar-thickness: 20px;
+    --skill-bar-color: orange;
+}
+
+@media screen and (min-width:768px) {
+    article {
+        width: calc(100% - 216px); /* 216 är bildens bredd */
+        max-width: 900px;
+    }
+}
+
+
+
+.skill-container {
+    /* width: 80%; */
+    border: 6px dashed orange;
+    color: orange;
+    background-color: black;
+    border-radius: 60px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.skill-container .skill-bar {
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+.skill-container span {
+    font-family: "Comic Sans", "Comic Sans MS";
+}
+
+#bar1 {
+    --target-width: 90%;
+    animation-duration: 1s;
+}
+#bar2 {
+    --target-width: 10%;
+    animation-delay: 2s;
+    animation-duration: 2s;
+}
+#bar3 {
+    --target-width: 80%;
+    animation-delay: 4s;
+    animation-duration: 2s;
+}
+#bar4 {
+    --target-width: 50%;
+    animation-delay: 6s;
+    animation-duration: 2s;
+}
+#bar5 {
+    --target-width: 56%;
+    animation-delay: 8s;
+    animation-duration: 2s;
+}
+#bar6 {
+    --target-width: 75%;
+    animation-delay: 10s;
+    animation-duration: 2s;
+}

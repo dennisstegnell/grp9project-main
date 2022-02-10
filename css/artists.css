@@ -1,0 +1,67 @@
+.main-content {
+    text-align: center;
+}
+
+.main-content h1 {
+    margin-bottom: 30px;
+}
+
+.image-container {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.main-content img {
+    height: auto;
+    width: 100%;
+}
+
+.main-content p {
+    all: initial;
+    display: block;
+    text-align: center;
+}
+
+#artist-red, 
+#artist-orange, 
+#artist-green {
+    z-index: 1;
+    position: absolute;
+    height: calc(100% - 4px);
+    top: 0px;
+}
+
+#artist-red {
+    width: 32.5%;
+    left: 0px;
+}
+#artist-red:hover {
+    background-color: red;
+    opacity: 15%;
+}
+
+#artist-orange {
+    width: 31%;
+    left: 32.5%;
+}
+#artist-orange:hover {
+    background-color: orange;
+    opacity: 30%;
+}
+
+#artist-green {
+    width: 36.5%;
+    right: 0px;
+}
+#artist-green:hover {
+    background-color: green;
+    opacity: 20%;
+}
+
+/* Fulhack för att få main-content att omringa allt innehåll. 
+Om det inte finns en text som löper mer än en rad fungerar det inte av någon anledning. */
+#visa-inte-skiten {
+    opacity: 0;
+}

@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Debug */
+/* header, nav, article, footer { border: 2px solid red; } */
+/* .flex-container-outer { border: 2px solid goldenrod; } */
+/* .main-content { border: 2px solid red; } */
+/* .flex-container-inner { border: 2px solid green; } */
+/* .image-box, .navbar { border: 2px solid blue; } */
+
+:root {
+    --header-height: 100px;
+    --footer-height: 150px;
+}
+
+.main-content {
+    min-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--nav-height));
+}
+
+.main-content h1 {
+    font-family: "Comic Sans", "Comic Sans MS";
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin: 30px 0px;
+}
+.main-content h2 {
+    font-family: "Comic Sans", "Comic Sans MS";
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.main-content a { 
+    text-decoration: none;   
+}
+.main-content a:hover {
+    color: crimson;
+}
+
+.fake-thumbnail {
+    width: 200px;
+    height: 200px;
+    background-color: forestgreen;
+    text-align: center;
+    padding: 40px;
+}
+
+header {
+    background-image: url("../images/header.png");
+    height: var(--header-height);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 439px 100px;
+    background-position: center;
+}
+
+footer {
+    background-color: black;
+    background-image: url("../images/feet.jpg");
+    background-size: contain;
+    background-position: center;
+    height: var(--footer-height);
+}
+
+.flex-container-outer {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url("../images/organic-bg.jpg");
+}
+
+article {
+    height: auto;
+    width: auto;
+}
+
+.image-box {
+    float: left;
+    text-align: center;
+    max-width: 300px;
+}
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width:768px) {
+    header {
+        background-repeat: repeat;
+        background-size: contain;
+    }
+    .flex-container-outer {
+        flex-direction: row;
+    }
+    .main-content {
+        width: calc(100% - var(--navbar-width));
+        min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    }
+}

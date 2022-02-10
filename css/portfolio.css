@@ -1,0 +1,56 @@
+:root {
+    --article-margin: 25px;
+}
+
+.main-content h1 {
+    margin-bottom: 0px;
+}
+
+.flex-container-inner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+article {
+    padding: 15px;
+    margin: var(--article-margin);
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.image-box {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.image-box h3 {
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 24px;
+    margin: 0px;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .flex-container-inner {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    article {
+        width: 45%;
+        margin: var(--article-margin) 0px 0px 0px;
+    }
+    .main-content {
+        margin-bottom: var(--article-margin);
+    }
+}
+@media screen and (min-width:1160px) {
+    article {
+        width: 30%;
+    }
+}

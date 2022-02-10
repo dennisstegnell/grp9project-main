@@ -1,0 +1,130 @@
+:root {
+    --navbar-width: 110px;
+    --nav-height: 60px;
+}
+
+nav {
+    height: var(--nav-height);
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    color: white;
+    background-color: black;
+    text-align: center;
+    z-index: 5;
+}
+
+nav label {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    float: right;
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+nav .menu {
+    text-align: right;
+    background: black;
+    position: absolute;
+    width: 100%;
+    right: 0px;
+    top: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 10px;
+    transform:scale(1,0);
+    transform-origin: top;
+    transition: transform  ease-in-out;
+}
+
+nav p {
+    font-family: "Comic Sans", "Comic Sans MS";
+    font-variant: small-caps;
+    color: white;
+    opacity: 1;
+    display: inline-block;
+    margin-top: 12px;
+    margin-right: -75%;
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav span {
+    color: yellow;
+}
+
+nav .menu a {
+    clear: right;
+    color: white;
+    border-bottom: 1px solid #646262;
+    display: block;
+    margin: 0;
+    font-size: 32px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 100ms ease-in-out;
+}
+nav .menu a:hover {
+    color: coral;
+
+}
+nav .menu span:hover {
+    color: coral;
+}
+
+#menu-toggle {
+    display: none;
+}
+#menu-toggle:checked + .menu {
+    display: block; 
+    transform: scale(1,1);
+}
+
+#menu-toggle:checked + .menu a {
+    opacity: 1;
+    transition: opacity 200ms ease-in-out 200ms;
+}
+
+
+
+@media screen and (min-width:768px) {  
+    #menu-toggle, nav label {
+        display: none;
+    }
+
+    nav {
+        background: black;
+        opacity: 1;
+        height: unset;
+        position: -webkit-sticky;
+        position: sticky;
+    }
+
+    nav p {
+        display: none;
+    }
+    
+    nav .menu {
+        all: unset;
+        margin: 0;
+        display: block;
+        width: var(--navbar-width);
+        background: black;
+        opacity: 1;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 10px;
+    }
+
+    nav .menu a {    
+        background: black;
+        color: white;
+        margin: 0 10px;
+        line-height: 60px;
+        opacity: 1;
+        font-size: 24px;
+        text-align: center;
+    }
+}
