@@ -72,7 +72,7 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-image: url("./images/organic-bg.jpg");
+    background-image: url("images/organic-bg.jpg");
 }
 
 article {
